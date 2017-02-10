@@ -1,0 +1,92 @@
+import java.io.*;
+import java.util.*;
+
+/*
+ *  input format: in.nextLine() return String  
+ *  Advances this scanner past the current line and returns the input that was skipped.
+ *  2
+ *  5
+ *  1 2 3 4 5
+ *  6 7 8 9 10
+ *  11
+ */
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Scanner in = new Scanner(System.in);
+        int firstn = in.nextInt();
+        //in = in.nextLine();
+        int secondn = in.nextInt();
+        
+        Scanner nums;
+        int[][] array = new int[firstn][secondn];
+        for (int i = 0; i < firstn; i++) {
+            nums = new Scanner(in.nextLine());
+            for (int j = 0; j < secondn; j++) {
+                array[i][j] = in.nextInt();
+            }
+            
+        }
+        
+        int thirdnum = in.nextInt();
+        System.out.println(firstn);
+        System.out.println(secondn);
+        System.out.println(thirdnum);
+        
+        
+        for (int i = 0; i < firstn; i++) {
+            for (int j = 0; j < secondn; j++) {
+                System.out.print(array[i][j]+" ");
+            }
+            System.out.println("");
+        }
+        
+    }
+}
+
+
+if input == 
+2 3
+5
+1 2 3 4 5
+6 7 8 9 10
+11
+
+then code is:
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Scanner in = new Scanner(System.in);
+        int firstn = in.nextInt();
+        in.nextLine();
+        //in = in.nextLine();
+        int secondn = in.nextInt();
+       
+        //in.nextLine();
+        
+        Scanner nums;
+        int[][] array = new int[firstn][secondn];
+        for (int i = 0; i < firstn; i++) {
+            nums = new Scanner(in.nextLine());
+            for (int j = 0; j < secondn; j++) {
+                array[i][j] = in.nextInt();
+            }
+            
+        }
+        
+        int thirdnum = in.nextInt();
+        System.out.println(firstn);
+        System.out.println(secondn);
+        System.out.println(thirdnum);
+        
+        
+        for (int i = 0; i < firstn; i++) {
+            for (int j = 0; j < secondn; j++) {
+                System.out.print(array[i][j]+" ");
+            }
+            System.out.println("");
+        }  
+    }
+}
